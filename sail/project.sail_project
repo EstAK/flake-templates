@@ -1,0 +1,10 @@
+core {
+    files [
+          model/prelude.sail,
+    ]
+}
+
+main {
+     requires core
+     files model/main.sail
+}

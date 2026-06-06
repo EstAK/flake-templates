@@ -1,0 +1,10 @@
+.DS_Store
+.idea
+*.log
+tmp/
+
+.direnv
+sail_smt_cache
+
+main.c
+main.h
