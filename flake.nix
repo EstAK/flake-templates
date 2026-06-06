@@ -7,17 +7,17 @@
       templates = {
         ocaml = {
           path = ./ocaml;
-          description = "Python development template";
+          description = "Ocaml development template";
         };
 
         sail = {
           path = ./sail;
-          description = "Python development template";
+          description = "Sail development template";
         };
 
         zig = {
           path = ./zig;
-          description = "Python development template";
+          description = "Zig development template";
         };
 
         blank = {
@@ -30,8 +30,6 @@
           description = "Rust development template";
         };
 
-        # optional: default template
-        defaultTemplate = self.templates.blank;
       };
     };
 }
