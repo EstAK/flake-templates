@@ -5,6 +5,10 @@
     { self }:
     {
       templates = {
+        blank = {
+          path = ./blank;
+          description = "A blank template to start from";
+        };
         ocaml = {
           path = ./ocaml;
           description = "Ocaml development template";
@@ -19,15 +23,13 @@
           path = ./zig;
           description = "Zig development template";
         };
-
-        blank = {
-          path = ./blank;
-          description = "A blank template to start from";
-        };
-
         rust = {
           path = ./rust;
           description = "Rust development template";
+        };
+        typst = {
+          path = ./typst;
+          description = "Typst writing template";
         };
 
       };
