@@ -31,6 +31,10 @@
           path = ./typst;
           description = "Typst writing template";
         };
+        python = {
+          path = ./python;
+          description = "Python development template";
+        };
 
       };
     };
