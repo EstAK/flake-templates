@@ -35,6 +35,10 @@
           path = ./python;
           description = "Python development template";
         };
+        c = {
+          path = ./c;
+          description = "C development template";
+        };
 
       };
     };
