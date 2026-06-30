@@ -7,7 +7,7 @@
 CC = gcc
 
 CFLAGS = -Wall -Wextra -Werror -Wnonnull
-LFLAGS = -Linclude/
+LFLAGS = -Iinclude/
 
 SRCS = $(shell find . -name "*.c" ! -name "main.c")
 OBJS = $(SRCS:.c=.o)
@@ -25,7 +25,7 @@ main: src/main.c $(OBJS)
 	$(CC) $(CFLAGS) -o $@ $^ $(LFLAGS)
 
 src/%.o: src/%.c
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@ $(LFLAGS)
 
 clean:
 	rm main $(OBJS)
