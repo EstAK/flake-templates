@@ -1,5 +1,5 @@
 {
-  description = "A blank flake to start with";
+  description = "A python flake to start with";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
   };
@@ -37,7 +37,9 @@
           default = pkgs.mkShell {
             buildInputs = [
               python
-              pkgs.pyright
+              pkgs.ty
+              pkgs.ruff
+              pkgs.rassumfrassum
             ];
           };
         }
