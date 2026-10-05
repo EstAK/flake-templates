@@ -27,6 +27,10 @@
           path = ./rust;
           description = "Rust development template";
         };
+        sched_ext = {
+          path = ./sched_ext;
+          description = "Rust sched_ext development template";
+        };
         typst = {
           path = ./typst;
           description = "Typst writing template";
