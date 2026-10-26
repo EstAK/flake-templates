@@ -44,6 +44,11 @@
           description = "C development template";
         };
 
+	build_rpi5_kernel = {
+          path = ./build_rpi5_kernel;
+          description = "Build the rpi5 kernel environment";
+        };
+
       };
     };
 }
